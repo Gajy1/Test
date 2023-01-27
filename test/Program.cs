@@ -6,10 +6,12 @@ arrString = new string[4];
 
 static void FilArr(string[] arrString)
     {
-  
+      int n = 1;
       for (int i = 0; i < arrString.Length; i++)
       {
-        Console.WriteLine("Введите строку:");
+      
+        Console.WriteLine($"Введите строку {n}/4:");
+        n++;
         string s = Console.ReadLine();
           arrString[i] = s;
       }
